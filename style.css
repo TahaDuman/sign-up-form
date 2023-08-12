@@ -8,7 +8,7 @@
 }
 .left-sidebar{
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
-    width: 40%;
+    width: 35%;
     height: 100vh;
 }
 .sidebar-text{
@@ -16,6 +16,31 @@
     color: white;
     justify-content: center;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 40%;
     background-color: rgba(0, 0, 0, 0.35);
+}
+.sidebar-text > h1{
+    font-size: 3rem;
+}
+
+main{
+    width: 65%;
+    background-color: wheat;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    
+}
+
+.main-1{
+    margin-top: 2rem;
+    background-color: red;
+    padding: 2rem;
+}
+.main-2{
+    padding: 2rem;
+    background-color: white;
 }
