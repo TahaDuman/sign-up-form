@@ -7,14 +7,15 @@
     display: flex;
 }
 .left-sidebar{
-    position: relative;
-    width: 45%;
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    width: 40%;
     height: 100vh;
 }
-
-.sidebar-title{
-    position: absolute;
-    top: 5px;
-    color: red;
-    background-color: rgba(0, 0, 0, 0.5);
+.sidebar-text{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    background-color: rgba(0, 0, 0, 0.35);
 }
