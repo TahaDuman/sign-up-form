@@ -2,7 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    --main-bg-color: #ededed
 }
+input,
+textarea,
+select,
+button {
+  width:  150px;
+}
+
 .wrapper{
     display: flex;
 }
@@ -25,7 +33,7 @@
 
 main{
     width: 65%;
-    background-color: wheat;
+    background-color: var(--main-bg-color);
 }
 
 .main-wrapper{
@@ -37,10 +45,44 @@ main{
 
 .main-1{
     margin-top: 2rem;
-    background-color: red;
+    background-color: var(--main-bg-color);
     padding: 2rem;
 }
 .main-2{
     padding: 2rem;
     background-color: white;
+    -webkit-box-shadow: 3px 5px 5px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 5px 5px -3px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 5px -3px rgba(0,0,0,0.75);
+    
+
+    z-index: 1;
+}
+.main-3{
+    padding: 2rem;
+    background-color: var(--main-bg-color);
+    
+}
+fieldset{
+    display: flex;
+    gap: 3rem;
+    border: none;
+}
+label{
+    display: block;
+    
+}
+input{
+    width: min(290px, 15rem);
+    padding: .3rem;
+
+}
+
+.header-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-text:nth-child(2){
+    margin-top: 2rem;
 }
