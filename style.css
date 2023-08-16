@@ -2,20 +2,28 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    --main-bg-color: #ededed
+    --main-first-color: #42b883;
+    --main-bg-color: #ededed;
+    font-family: 'Roboto', sans-serif;
+    
+}
+html{
+    background-color: var(--main-bg-color);
 }
 input,
 textarea,
-select,
-button {
+select {
   width:  150px;
 }
-
+a{
+    text-decoration: none;
+}
 .wrapper{
     display: flex;
 }
 .left-sidebar{
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
     width: 35%;
     height: 100vh;
 }
@@ -30,10 +38,13 @@ button {
 .sidebar-text > h1{
     font-size: 3rem;
 }
-
+.logo{
+    width: 17%
+}
 main{
     width: 65%;
     background-color: var(--main-bg-color);
+    
 }
 
 .main-wrapper{
@@ -59,7 +70,7 @@ main{
     z-index: 1;
 }
 .main-3{
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     background-color: var(--main-bg-color);
     
 }
@@ -73,16 +84,101 @@ label{
     
 }
 input{
-    width: min(290px, 15rem);
-    padding: .3rem;
-
+    width: clamp(1rem, 250px, 20rem);
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+input:valid{
+    border: #42b883 2px solid;
 }
 
 .header-text{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 .header-text:nth-child(2){
     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+button{
+    background-color: var(--main-first-color);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: 15px;
+    width: 300px;
+    padding: .8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+label{
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.85);
+}
+label::before{
+    content: "* ";
+    color: red;
+}
+
+@media screen and (max-width: 950px) {
+    p {
+      color: red;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .left-sidebar{
+        width: 100%;
+        height: 20vh;
+    }
+    .sidebar-text{
+        margin-top: 0%;
+    }
+    .logo{
+
+    }
+    main{
+        width: auto;
+    }
+    .main-1{
+        padding-bottom:0;
+    }
+    input{
+        width: max(200px);
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    .main-3 {
+        padding: 2rem;
+    }
+  }
+
+@media screen and (max-width: 500px){
+    fieldset {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ;
+        gap: .2rem;
+    }
+    .main-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        width: 200px;
+        padding: .8rem;
+        font-size: 1.4rem;
+    }
+    label{
+        font-size: 1.2rem;
+    }
+    .main-2 > h3{
+
+    }
 }

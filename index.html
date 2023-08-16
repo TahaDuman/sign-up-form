@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing Up</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <div class="left-sidebar">
             <div class="sidebar-text">
-                <img src="odin-lined.png" width="17%" >
+                <img class="logo" src="odin-lined.png" >
                 <h1>ODIN</h1>
             </div>
         </div>
@@ -18,13 +22,16 @@
         <main>
             <div class="main-wrapper">
                 <div class="main-1">
-                    <div class="header-text">This is a placeholder text that i wrote for it fill this place. It has no meaning so you don't have to read it. But you can still read it if you want.</div>
-                    <div class="header-text">You want to sign up?</div>
+                    <div class="header-text">
+                        <p>This is a placeholder text that i wrote for it fill this place. It has no meaning so you don't have to read it. But you can still read it if you want.</p>
+                    </div>
+                    <div class="header-text">
+                        <p>You want to sign up?</p></div>
                     
                 </div>
                 <div class="main-2">
                     <h3>Lets do it!</h3>
-                    <form action="">
+                    <form action="" method="get" id="sign-up-form">
                         <fieldset>
                             <div>
                                 <label for="first_name">FIRST NAME</label>
@@ -65,8 +72,8 @@
 
                 </div>
                 <div class="main-3">
-                    <button>CREATE ACCOUNT</button>
-                    <div>Already Have Account? <span>Log in</span></div>
+                    <button type="submit" form="sign-up-form" class="create-acc-btn">Create Account</button>
+                    <div>Already Have Account? <span> <a href="#">Log in</a> </span></div>
                 </div>
             </div>
         </main>
