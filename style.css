@@ -37,6 +37,7 @@ a{
 }
 .sidebar-text > h1{
     font-size: 3rem;
+    font-family: 'Caprasimo', cursive;
 }
 .logo{
     width: 17%
@@ -84,14 +85,20 @@ label{
     
 }
 input{
+    border: black 3px solid;
     width: clamp(1rem, 250px, 20rem);
     padding: .5rem;
     font-size: 1.5rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
 }
 input:valid{
-    border: #42b883 2px solid;
+    border: #42b883 3px solid;
 }
-
+input:focus{
+    border: royalblue 3px solid;
+}
 .header-text{
     font-size: 1.2rem;
     font-weight: bold;
