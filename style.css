@@ -22,7 +22,7 @@ a{
     display: flex;
 }
 .left-sidebar{
-    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     width: 35%;
     height: 100vh;
@@ -132,9 +132,6 @@ label::before{
 }
 
 @media screen and (max-width: 950px) {
-    p {
-      color: red;
-    }
     .wrapper{
         flex-direction: column;
     }
